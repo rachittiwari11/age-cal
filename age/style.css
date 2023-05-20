@@ -63,10 +63,24 @@ border-radius: 26%
         margin: -3px 162px;
         border-radius: 12px;
     }
-    @media only screen and (max-width: 354px) {
+     @media only screen and (max-width: 354px) {
         .one,.two,.three{
             margin-right: 33%;
             border-radius: 26%
+            }
+            .cont{
+                background-color: whitesmoke;
+                min-height: 15rem;
+                width: 25rem;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                margin-top: 9%;
+                border-radius: 5%;
+                flex-direction:column;
+                -webkit-box-shadow: -3px 2px 27px 7px rgba(0,0,0,0.75);
+                -moz-box-shadow: -3px 2px 27px 7px rgba(0,0,0,0.75);
+                box-shadow: -3px 2px 27px 7px rgba(0,0,0,0.75);
             }
         
       }
