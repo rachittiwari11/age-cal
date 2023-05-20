@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    flex-direction:row;
+    display: flex;
+    flex-wrap:wrap;
+    background-color: red;
+    justify-content: center;
+    text-align: center;
+    background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+
+}
+.cont{
+    background-color: whitesmoke;
+    min-height: 27rem;
+    width: 38rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 9%;
+    border-radius: 5%;
+    flex-direction:column;
+    -webkit-box-shadow: -3px 2px 27px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 2px 27px 7px rgba(0,0,0,0.75);
+    box-shadow: -3px 2px 27px 7px rgba(0,0,0,0.75);
+}
+
+h3{
+    font-size:27px;
+    margin-top:1%;
+}
+.one,.two,.three{
+margin-right: 41%;
+border-radius: 26%
+}
+.first,.second,.third{
+    height: 33px;
+    width: 59%;
+    border-radius: 3%;}
+    
+    :placeholder-shown{
+        text-align: center;
+    }
+    .btn{
+        margin-top: 4%;
+        height: 38px;
+        width: 18%;
+        font-size: 16px;
+        flex-wrap:wrap;
+        background-color: rgb(132, 230, 132);
+   border-radius: 8px;
+   cursor:pointer;
+
+    }
+    .age{
+        font-size: 19px;
+        flex-wrap: wrap;
+        
+        margin: -3px 162px;
+        border-radius: 12px;
+    }
+    @media only screen and (max-width: 354px) {
+        .one,.two,.three{
+            margin-right: 33%;
+            border-radius: 26%
+            }
+        
+      }
+      @media only screen and (max-width: 394px) {
+        .one,.two,.three{
+            margin-right: 35%;
+            border-radius: 26%
+            }
+        
+      }

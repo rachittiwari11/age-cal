@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cont">
+        <h3>AGE CALCULATOR</h3><hr>
+<br>
+<br>
+<br>
+
+        <div class="one">Enter the Date</div>
+        <input type="text" placeholder="dddd" name="" id="date" class="first">
+
+        <br>
+        <br>
+        
+        <div class="two">Enter the Month </div>
+        <input type="text" placeholder="mmm" name="" id="month" class="second">
+        <br>
+        <br>
+
+        <div class="three">Enter the Year </div>
+        <input type="text" placeholder="YYYY" name="" id="year" class="third">
+        <br>
+
+
+
+        <button class="btn" onclick="age()">calculate</button>
+        <br>
+        <br>
+        <div class ="age" id="age"></div>
+
+    </div>
+
+
+
+
+    <script>
+        function age(){
+            var d1=document.getElementById('date').value;
+            var m1=document.getElementById('month').value;
+            var y1=document.getElementById('year').value;
+          
+
+         if(d1>31){
+            alert("Enter valid date");
+         }
+       
+         else if(m1>12){
+            alert("Enter valid month");
+         }
+         else if(y1<0){
+            alert("Enter valid year");
+
+         }
+
+
+
+
+
+
+            var date=new Date();
+            var d2=date.getDate(); 
+            var m2=1+date.getMonth();
+            var y2=date.getFullYear();
+
+            var month=[31,28,31,30,31,30,31,31,30,31,30,31];
+            if(d1>d2){
+                d2=d2+month[m2-1];
+                m2=m2-1;
+            }
+            if(m1>m2){
+                m2=m2+12;
+                y2=y2-1;
+            }
+
+            var d=d2-d1;
+            var m=m2-m1;
+            var y=y2-y1;
+
+            document.getElementById('age').innerHTML='Your age is' +"  "   +y+ " "+    'years' +" "   +m+  " "+  'months' +" " +d+  ' Days';
+
+
+        }
+    </script>
+    
+    
+</body>
+</html>
